@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentMart — E-Commerce Product Gallery & Filter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="logo" href="#">Student<span>Mart</span></a>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Catalog</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a href="#" class="btn btn-outline">View Cart (2)</a>
+    </div>
+  </header>
+
+  <main class="container page-layout">
+    <aside class="filter-sidebar">
+      <h2>Filter Products</h2>
+
+      <div class="filter-group">
+        <h3>Categories</h3>
+        <label><input type="checkbox" /> Electronics</label>
+        <label><input type="checkbox" /> Fashion</label>
+        <label><input type="checkbox" /> Home</label>
+        <label><input type="checkbox" /> Fitness</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Price Range</h3>
+        <label><input type="checkbox" /> Under $25</label>
+        <label><input type="checkbox" /> $25 - $50</label>
+        <label><input type="checkbox" /> $50 - $100</label>
+        <label><input type="checkbox" /> Above $100</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Ratings</h3>
+        <label><input type="checkbox" /> ★★★★★</label>
+        <label><input type="checkbox" /> ★★★★☆ & up</label>
+        <label><input type="checkbox" /> ★★★☆☆ & up</label>
+      </div>
+    </aside>
+
+    <section class="products-section">
+      <div class="section-head">
+        <h1>E-Commerce Product Gallery & Filter</h1>
+        <p>Student project demo with reusable product cards, hover interactions, badges, and responsive CSS Grid.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <span class="badge sale">Sale</span>
+            <span class="placeholder">Image</span>
+          </div>
+          <h3>Wireless Earbuds Pro</h3>
+          <div class="price-row">
+            <p class="price">$59.99</p>
+            <p class="old-price">$89.99</p>
+          </div>
+          <a href="#" class="btn btn-primary full">Add to Cart</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <span class="badge new">New</span>
+            <span class="placeholder">Image</span>
+          </div>
+          <h3>Smart Fitness Watch</h3>
+          <div class="price-row">
+            <p class="price">$129.00</p>
+            <p class="old-price">$149.00</p>
+          </div>
+          <a href="#" class="btn btn-primary full">Add to Cart</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <span class="badge sale">Sale</span>
+            <span class="placeholder">Image</span>
+          </div>
+          <h3>Minimal Leather Backpack</h3>
+          <div class="price-row">
+            <p class="price">$74.50</p>
+            <p class="old-price">$99.00</p>
+          </div>
+          <a href="#" class="btn btn-primary full">Add to Cart</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <span class="badge sale">Sale</span>
+            <span class="placeholder">Image</span>
+          </div>
+          <h3>Portable Bluetooth Speaker</h3>
+          <div class="price-row">
+            <p class="price">$39.90</p>
+            <p class="old-price">$54.90</p>
+          </div>
+          <a href="#" class="btn btn-primary full">Add to Cart</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <span class="badge new">New</span>
+            <span class="placeholder">Image</span>
+          </div>
+          <h3>Organic Cotton Hoodie</h3>
+          <div class="price-row">
+            <p class="price">$44.00</p>
+            <p class="old-price">$59.00</p>
+          </div>
+          <a href="#" class="btn btn-primary full">Add to Cart</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <span class="badge sale">Sale</span>
+            <span class="placeholder">Image</span>
+          </div>
+          <h3>Desk Lamp Studio Edition</h3>
+          <div class="price-row">
+            <p class="price">$28.99</p>
+            <p class="old-price">$42.00</p>
+          </div>
+          <a href="#" class="btn btn-primary full">Add to Cart</a>
+        </article>
+      </div>
+
+      <nav class="pagination" aria-label="Product pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>
