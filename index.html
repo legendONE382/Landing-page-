@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StudentMart — E-Commerce Product Gallery & Filter</title>
+  <title>PulseBlog — Modern Blog App Landing Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,138 +12,71 @@
 <body>
   <header class="topbar">
     <div class="container nav-wrap">
-      <a class="logo" href="#">Student<span>Mart</span></a>
+      <a class="logo" href="index.html">Pulse<span>Blog</span></a>
       <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Catalog</a>
-        <a href="#">Deals</a>
-        <a href="#">Contact</a>
+        <a class="active-link" href="index.html">Home</a>
+        <a href="blog.html">Articles</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <a href="#" class="btn btn-outline">View Cart (2)</a>
+      <a href="blog.html" class="btn btn-outline">Start Reading</a>
     </div>
   </header>
 
-  <main class="container page-layout">
-    <aside class="filter-sidebar">
-      <h2>Filter Products</h2>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Professional Publishing Platform</p>
+          <h1>Create, Publish, and Grow Your Blog With Confidence</h1>
+          <p>PulseBlog is a modern blog app landing page concept designed by students to showcase clean typography, editorial layouts, strong calls to action, and conversion-focused sections using only HTML and CSS.</p>
+          <div class="hero-actions">
+            <a href="blog.html" class="btn btn-primary">Explore Articles</a>
+            <a href="about.html" class="btn btn-ghost">How It Works</a>
+          </div>
+        </div>
 
-      <div class="filter-group">
-        <h3>Categories</h3>
-        <label><input type="checkbox" /> Electronics</label>
-        <label><input type="checkbox" /> Fashion</label>
-        <label><input type="checkbox" /> Home</label>
-        <label><input type="checkbox" /> Fitness</label>
-      </div>
-
-      <div class="filter-group">
-        <h3>Price Range</h3>
-        <label><input type="checkbox" /> Under $25</label>
-        <label><input type="checkbox" /> $25 - $50</label>
-        <label><input type="checkbox" /> $50 - $100</label>
-        <label><input type="checkbox" /> Above $100</label>
-      </div>
-
-      <div class="filter-group">
-        <h3>Ratings</h3>
-        <label><input type="checkbox" /> ★★★★★</label>
-        <label><input type="checkbox" /> ★★★★☆ & up</label>
-        <label><input type="checkbox" /> ★★★☆☆ & up</label>
-      </div>
-    </aside>
-
-    <section class="products-section">
-      <div class="section-head">
-        <h1>E-Commerce Product Gallery & Filter</h1>
-        <p>Student project demo with reusable product cards, hover interactions, badges, and responsive CSS Grid.</p>
-      </div>
-
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-image">
-            <span class="badge sale">Sale</span>
-            <span class="placeholder">Image</span>
+        <article class="hero-panel">
+          <p class="eyebrow small">Featured Story</p>
+          <h3>How Great Blog Design Builds Reader Trust</h3>
+          <p>Discover why spacing, readability, and article structure directly impact engagement and retention.</p>
+          <div class="meta-row">
+            <span>8 min read</span>
+            <span>May 13, 2026</span>
           </div>
-          <h3>Wireless Earbuds Pro</h3>
-          <div class="price-row">
-            <p class="price">$59.99</p>
-            <p class="old-price">$89.99</p>
-          </div>
-          <a href="#" class="btn btn-primary full">Add to Cart</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="badge new">New</span>
-            <span class="placeholder">Image</span>
-          </div>
-          <h3>Smart Fitness Watch</h3>
-          <div class="price-row">
-            <p class="price">$129.00</p>
-            <p class="old-price">$149.00</p>
-          </div>
-          <a href="#" class="btn btn-primary full">Add to Cart</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="badge sale">Sale</span>
-            <span class="placeholder">Image</span>
-          </div>
-          <h3>Minimal Leather Backpack</h3>
-          <div class="price-row">
-            <p class="price">$74.50</p>
-            <p class="old-price">$99.00</p>
-          </div>
-          <a href="#" class="btn btn-primary full">Add to Cart</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="badge sale">Sale</span>
-            <span class="placeholder">Image</span>
-          </div>
-          <h3>Portable Bluetooth Speaker</h3>
-          <div class="price-row">
-            <p class="price">$39.90</p>
-            <p class="old-price">$54.90</p>
-          </div>
-          <a href="#" class="btn btn-primary full">Add to Cart</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="badge new">New</span>
-            <span class="placeholder">Image</span>
-          </div>
-          <h3>Organic Cotton Hoodie</h3>
-          <div class="price-row">
-            <p class="price">$44.00</p>
-            <p class="old-price">$59.00</p>
-          </div>
-          <a href="#" class="btn btn-primary full">Add to Cart</a>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="badge sale">Sale</span>
-            <span class="placeholder">Image</span>
-          </div>
-          <h3>Desk Lamp Studio Edition</h3>
-          <div class="price-row">
-            <p class="price">$28.99</p>
-            <p class="old-price">$42.00</p>
-          </div>
-          <a href="#" class="btn btn-primary full">Add to Cart</a>
         </article>
       </div>
+    </section>
 
-      <nav class="pagination" aria-label="Product pagination">
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Next</a>
-      </nav>
+    <section class="section">
+      <div class="container">
+        <h2>Everything Needed for a Modern Blog App</h2>
+        <div class="features-grid">
+          <article class="feature-card"><h3>Editorial Templates</h3><p>Professionally structured pages that make every post look polished and readable.</p></article>
+          <article class="feature-card"><h3>SEO-Friendly Structure</h3><p>Semantic heading flow and clear content hierarchy for discoverability.</p></article>
+          <article class="feature-card"><h3>Fast Performance</h3><p>Lightweight HTML/CSS architecture for smooth experiences on all devices.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container stats-grid">
+        <div><strong>3,200+</strong><span>Active Writers</span></div>
+        <div><strong>96%</strong><span>Reader Satisfaction</span></div>
+        <div><strong>2.4x</strong><span>Return Visits</span></div>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 PulseBlog. Built for modern publishing teams.</p>
+      <div class="footer-links">
+        <a href="blog.html">Articles</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
